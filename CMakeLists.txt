@@ -1,0 +1,7 @@
+add_library(plugin_sienci_homing_acceleration INTERFACE)
+
+target_sources(plugin_sienci_homing_acceleration INTERFACE
+ ${CMAKE_CURRENT_LIST_DIR}/sienci_homing_acceleration.c
+)
+
+target_include_directories(plugin_sienci_homing_acceleration INTERFACE ${CMAKE_CURRENT_LIST_DIR})
